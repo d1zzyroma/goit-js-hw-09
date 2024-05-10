@@ -106,6 +106,7 @@ function handelClick(event){
     event.preventDefault()
 }
 
+
 let galleryImages = new SimpleLightbox('.gallery a', {
     showCounter: false,
     captionsData: "alt",
