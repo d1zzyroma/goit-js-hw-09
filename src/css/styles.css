@@ -32,3 +32,60 @@
   width: 360px;
   height: 200px;
 }
+
+.feedback-form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 408px;
+  gap: 8px;
+}
+
+.form-input{
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  border-color:rgba(128, 128, 128, 1);
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.form-label{
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(46, 47, 66, 1);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-textarea{
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  border-color: rgba(128, 128, 128, 1);
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.form-button{
+  width: 95px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color:rgba(78, 117, 255, 1);
+  color:rgba(255, 255, 255, 1);
+}
+
+
+.form-button:hover{
+  background-color: rgba(108, 140, 255, 1);
+}
+
+.form-input:hover, .form-textarea:hover{
+  border-color:rgba(0, 0, 0, 1);
+}
