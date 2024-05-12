@@ -96,25 +96,12 @@ function createMarkup(arr){
     `).join("")
 }
 
-const galleryLinks = document.querySelectorAll(".gallery-link");
-
-galleryLinks.forEach(link => {
-    link.addEventListener("click", handelClick);
-});
-
-function handelClick(event){
-    event.preventDefault()
-}
-
-
 let galleryImages = new SimpleLightbox('.gallery a', {
     showCounter: false,
     captionsData: "alt",
     captionDelay:250
 
 });
-
-
 
 
 const imgElement = document.querySelectorAll(".gallery-image");
