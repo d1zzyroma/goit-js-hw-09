@@ -5,11 +5,11 @@ const formData = {
 
 const form = document.querySelector(".feedback-form");
 
-// Перевіряємо, чи є дані в localStorage
+
 const getFormData = localStorage.getItem("feedback-form-state");
 const parseFormData = JSON.parse(getFormData);
 
-// Встановлюємо значення полів форми, якщо є дані в localStorage
+
 if (parseFormData) {
     form.elements.email.value = parseFormData.email;
     form.elements.message.value = parseFormData.message;
@@ -21,7 +21,7 @@ if (parseFormData) {
     form.elements.message.value = "";
 }
 
-// Слухач подій для введення даних в форму
+
 form.addEventListener("input", handleInput);
 function handleInput(event) {
     if (event.target.name === "email") {
@@ -29,6 +29,8 @@ function handleInput(event) {
     } else if (event.target.name === "message") {
         formData.message = event.target.value;
     }
+
+    localStorage.setItem("feedback-form-state", JSON.stringify(formData));
 }
 
 
